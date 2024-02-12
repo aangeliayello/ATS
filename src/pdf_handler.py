@@ -18,7 +18,15 @@ def add_keywords_to_pdf_resume(resume_path, keywords, output_path):
     for keyword in keywords:
         # Add text in white color
         text = " " + keyword  # Add a leading space for separation
-        page.insert_text((x, y), text, color=(1, 1, 1), fontsize=1)  # RGB color in white
+        page.insert_text((x, y), text, color=(0, 0, 0), fontsize=1)
+        
+    for keyword in keywords:
+        # Add text in white color
+        text = " " + keyword  # Add a leading space for separation
+        print(keyword)
+        # Add text in black and white on top
+        page.insert_text((x, y), text, color=(0, 0, 0), fontsize=1)
+        page.insert_text((x, y), text, color=(1, 1, 1), fontsize=1)
     
     # Save the modified document
     doc.save(output_path)

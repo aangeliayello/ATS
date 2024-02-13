@@ -33,6 +33,9 @@ Run the script from the command line, optionally specifying a postfix for the ou
 
 The script will generate a new PDF file with the specified keywords added in white color (invisible to the eye but present in the document), stored in the `modified_resumes` directory, with the filename format `[original_name]_[postfix]_[datetime].pdf`.
 
+## Keywordlist
+You can use the JobAnalytics extension on Chrome to compare your CV against the job postings you are interested in. It will list the 'keywords' that you are missing, and you just add them to your keyboard list and keep building on it.
+
 ## Contributing
 Contributions to this project are welcome! Please fork the repository, make your changes, and submit a pull request. 
 Or, ping me if you have good info about the inner workings of the ATS's.
